@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> -->
+    <title>DB2 Test2</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="tab">
+            <div class="container">
+                <button id="btn-1" class="tablinks" onclick="openTab(event, 'films')">films</button>
+                <button id="btn-2" class="tablinks" onclick="openTab(event, 'people')">people</button>
+                <button id="btn-3" class="tablinks" onclick="openTab(event, 'planets')">planets</button>
+                <button id="btn-4" class="tablinks" onclick="openTab(event, 'species')">species</button>
+                <button id="btn-5" class="tablinks" onclick="openTab(event, 'starships')">starships</button>
+                <button id="btn-6" class="tablinks" onclick="openTab(event, 'vehicles')">vehicles</button>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input id="searchInput" type="text" name="search" value="" autocomplete="off" placeholder="Search input with live updates" onkeyup="searchFunction()">
+        </div>
+
+    
+        <div id="films" class="tabcontent">
+            <h2>films:</h2>
+            <ul class="ul-content" id="films-title"></ul>
+        </div>
+
+        <div id="people" class="tabcontent">
+            <h2>people:</h2>
+            <ul class="ul-content" id="films-title-2"></ul> 
+        </div>
+
+        <div id="planets" class="tabcontent">
+            <h2>planets:</h2>
+            <ul class="ul-content" id="films-title-3"></ul>
+        </div>
+
+        <div id="species" class="tabcontent">
+            <h2>species:</h2>
+            <ul class="ul-content" id="films-title-4"></ul> 
+        </div>
+    
+        <div id="starships" class="tabcontent">
+            <h2>starships:</h2>
+            <ul class="ul-content" id="films-title-5"></ul>
+        </div>
+
+        <div id="vehicles" class="tabcontent">
+            <h2>vehicles:</h2>
+            <ul class="ul-content" id="films-title-6"></ul>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
